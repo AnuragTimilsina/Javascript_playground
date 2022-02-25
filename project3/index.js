@@ -1,17 +1,18 @@
 console.log("Index.js File!!!");
 
 // Initializing the URL parameters:
-let country = 'us'; 
+let country = 'gb'; 
 let apiKey = 'c3deea4efcb344ba8621a2eb32304ea7';
+let category = 'sports';
 
 // Grab the news container.
 let newsAccordion = document.getElementById("newsAccordion");
 
 // Create an ajax get request:
 const xhr = new XMLHttpRequest();
-xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=${country}&apiKey=${apiKey}`, true);
+xhr.open('GET', `https://newsapi.org/v2/top-headlines?country=${country}&category=${category}&apiKey=${apiKey}&pageSize=100`, true);
 
-// What to do when response is ready
+// Getting the response and displaying it!
 xhr.onload = function() {
     if(this.status === 200){
         let json = JSON.parse(this.responseText);
