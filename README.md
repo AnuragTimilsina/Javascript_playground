@@ -1,2 +1,2 @@
 # javascript_playground
-Basic code and excercise compilation of beginner javascript  
+Basic code, projects and excercises compiled when I was learning javascript.  
