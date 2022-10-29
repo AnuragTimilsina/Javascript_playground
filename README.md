@@ -1,2 +1,2 @@
-# javascript_code_with_harry
-JavaScript codes and exercises learnt from code with harry.  
+# javascript_playground
+Basic code and excercise compilation of beginner javascript  
